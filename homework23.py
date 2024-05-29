@@ -18,11 +18,11 @@ def generate_exception(value):
 def main():
     try:
         result = generate_exception(-1)
-        print(f"Returned value:", result)
+        print("Returned value:", result)
     except InvalidDataException as e:
-        print(f"Error occurred:", e)
+        print("Error occurred:", e)
     except ProcessingException as e:
-        print(f"Error occurred:", e)
+        print("Error occurred:", e)
 
     try:
         result = generate_exception(0)
